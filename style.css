@@ -1,0 +1,273 @@
+/* ===== Geral ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== Cabecalho / Menu ===== */
+header {
+    background-color: #ffffff;
+    border-bottom: 3px solid #e95a0c; /* linha laranja embaixo */
+}
+
+/* deixa a logo maior (sem distorcer) */
+.Logo img {
+    width: auto;
+    height: 100px;
+}
+
+.Menu-Icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+/* Menu principal lado a lado */
+.menu-nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.Menu {
+    color: #333333;
+    padding: 10px;
+    display: block;
+    border-bottom: 3px solid transparent; /* espaco pro risco azul do hover */
+}
+
+.menu-item .Menu:hover {
+    color: #0068b7; /* azul ao passar o mouse */
+    border-bottom: 3px solid #0068b7; /* risquinho azul embaixo */
+}
+
+/* ===== Busca (escondida) ===== */
+.buscar {
+    display: none;
+}
+
+/* ===== Hero (meio, fundo azul) ===== */
+.hero {
+    background: linear-gradient(135deg, #0a2a6b, #1e73e8);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 36px;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* palavra destacada no texto */
+.destaque {
+    color: #1e73e8;
+    font-weight: bold;
+}
+
+/* ===== Secoes (video e mapa) ===== */
+.secao {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px 20px;
+}
+
+.secao h2 {
+    text-align: center;
+    color: #0a2a6b;
+}
+
+/* o iframe (video ou mapa) ocupa a largura toda */
+iframe {
+    width: 100%;
+    height: 380px;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* caixa tracejada enquanto o iframe nao foi colado */
+.espaco-iframe {
+    border: 3px dashed #1e73e8;
+    color: #1e73e8;
+    border-radius: 10px;
+    padding: 70px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ===== Cards dos componentes ===== */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    color: #222222;
+}
+
+.card:hover {
+    border-color: #1e73e8; /* borda azul ao passar o mouse */
+}
+
+/* caixa cinza no lugar da imagem (troque por <img> depois) */
+.card-img {
+    background-color: #f2f2f2;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999999;
+    border-radius: 6px;
+}
+
+.card p {
+    margin: 12px 0 0 0;
+    font-weight: bold;
+}
+
+/* Botoes do meio (escondidos) */
+.button {
+    display: none;
+}
+
+/* ===== Rodape ===== */
+.Rodape {
+    background-color: #0b1016;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 40px;
+    margin-top: 50px;
+}
+
+/* linha de cima: Follow Us + idioma, com a divisao embaixo */
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333333; /* a divisao */
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.follow span {
+    font-weight: bold;
+}
+
+.idioma {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* logo da CEUNSP, pintada de branco igual o github */
+.ceunsp {
+    height: 26px;
+    width: auto;
+    filter: brightness(0) invert(1); /* transforma a imagem em branco */
+    vertical-align: middle;
+}
+
+.Rodape ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+/* letras do rodape brancas */
+.Rodape a {
+    color: #ffffff;
+}
+
+.Rodape a:hover {
+    color: #e95a0c; /* laranja no hover */
+}
+
+
+.menu-item { position: relative; }
+
+.menu-nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 5px 0;
+    min-width: 160px;
+    z-index: 10;
+}
+ #busca {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto 0;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #dddddd;
+    border-radius: 30px;
+    outline: none;
+}
+
+#busca:focus {
+    border-color: #1e73e8;
+}
+[25/11/2026, 19:13:03] ~ Alexandre Oliveira: .menu-item { position: relative; }
+
+.menu-nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 5px 0;
+    min-width: 160px;
+    z-index: 10;
+}
+
+#busca {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto 0;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #dddddd;
+    border-radius: 30px;
+    outline: none;
+}
+
+#busca:focus { border-color: #1e73e8; }

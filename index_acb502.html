@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gyabit</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <header>
+        <div class="Menu-Container">
+            <section class="Menu-Icon">
+
+                <div class="Logo">
+                    <a href="index.html">
+                        <img src="imagem/logo.png" alt="Logo Gyabit" height="100px" width="100px">
+                    </a>
+                </div>
+
+            <nav class="menu-nav">
+    <ul>
+        <li class="menu-item">
+            <a href="#" class="Menu">Consumer</a>
+            <ul class="submenu">
+                <li><a href="#lugares" class="Menu">Componentes</a></li>
+                <li><a href="#video" class="Menu">Vídeo</a></li>
+                <li><a href="#mapa" class="Menu">Onde estamos</a></li>
+            </ul>
+        </li>
+
+        <li class="menu-item">
+            <a href="#Support" class="Menu">Support</a>
+            <ul class="submenu">
+                <li><a href="#" class="Menu">Downloads</a></li>
+                <li><a href="#" class="Menu">Garantia</a></li>
+                <li><a href="#" class="Menu">Contato</a></li>
+            </ul>
+        </li>
+
+        <li class="menu-item">
+            <a href="#" class="Menu">Produtos</a>
+            <ul class="submenu">
+                <li><a href="about.html" class="Menu">Sobre nós</a></li>
+                <li><a href="products.html" class="Menu">Produtos</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+        </div>
+        </section>
+    </header>
+
+    <body>
+      <main class="hero">
+            <h1>Welcome to Gyabit</h1>
+            <p>Explore our products and services to find the <span class="destaque">best solutions</span> for your needs.</p>
+            <button class="button"><a href="products.html" class="Menu">For you</a></button>
+            <button class="button"><a href="#" class="Menu">For business</a></button>
+        </main>
+
+        <!-- Cards dos componentes de PC -->
+        <input type="text" id="busca" placeholder="Buscar componente...">
+        <section class="cards">
+            <a href="#" class="card">
+                
+                <div class="card-img">Imagem</div>
+                <p>Memória RAM</p>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">Imagem</div>
+                <p>Processador</p>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">Imagem</div>
+                <p>Placa de Vídeo</p>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">Imagem</div>
+                <p>Placa-mãe</p>
+            </a>
+        </section>
+
+        <!-- Secao de video (iframe do YouTube) -->
+        <section class="secao" id="video">
+            <h2>Conheça a Gyabit</h2>
+            <!-- COLE AQUI O IFRAME DO YOUTUBE (Compartilhar > Incorporar > Copiar)
+                 e apague a linha <p class="espaco-iframe"> abaixo. -->
+            <p class="espaco-iframe">&#9654; <iframe width="560" height="315" src="https://www.youtube.com/embed/bW08y0gJqbY?si=Blg4__OCVH7epBUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </section>
+
+        <!-- Secao de mapa (iframe do Google Maps) -->
+        <section class="secao" id="mapa">
+            <h2>Onde estamos</h2>
+            <!-- COLE AQUI O IFRAME DO MAPA (Google Maps > Compartilhar > Incorporar um mapa > Copiar HTML)
+                 e apague a linha <p class="espaco-iframe"> abaixo. -->
+            <p class="espaco-iframe">Cole aqui o iframe do mapa do Google Maps</p>
+        </section>
+
+        <div class="Rodape">
+
+            <div class="social">
+                <div class="follow">
+                    <span>Follow Us</span>
+                    <a href="https://github.com/oLuisFelipeFerreira/Projeto_FrontEnd_Hardware" title="GitHub">
+                        <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.6 7.6 0 018 4.42c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    </a>
+                    <a href="https://www.ceunsp.edu.br" title="CEUNSP">
+                        <img src="imagem/ceunsp.png" alt="CEUNSP" class="ceunsp">
+                    </a>
+                </div>
+
+                <div class="idioma">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg>
+                    <span>Brazil (Português)</span>
+                </div>
+            </div>
+        <div class="secao" id="Support">
+    <h2>Customer Support</h2>
+    <p>Need help? Contact our support team.</p>
+    <p>Email: support@gyabit.com</p>
+        </div>
+
+            <ul>
+                <li><a href="about.html" class="Menu">About Us</a></li>
+                <li><a href="products.html" class="Menu">Products</a></li>
+            </ul>
+           <p>&copy; 2026 Gyabit. All rights reserved.</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
