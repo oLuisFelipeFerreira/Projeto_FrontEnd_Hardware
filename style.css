@@ -244,7 +244,7 @@ iframe {
 #busca:focus {
     border-color: #1e73e8;
 }
-[25/11/2026, 19:13:03] ~ Alexandre Oliveira: .menu-item { position: relative; }
+~ Alexandre Oliveira: .menu-item { position: relative; }
 
 .menu-nav .submenu {
     display: none;
